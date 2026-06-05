@@ -45,16 +45,18 @@ body{
 
 .menu-btn{
   color:white !important;
-  text-decoration:none;
-  font-size:18px !important;
+  text-decoration:none !important;
+  font-size:18px;
   font-weight:600;
   padding:10px 16px;
   border-radius:10px;
   transition:0.3s;
+  display:inline-block;
 }
 
 .menu-btn:hover{
   background:rgba(255,255,255,0.08);
+  color:#60a5fa !important;
 }
   
   height:100px;
@@ -103,6 +105,9 @@ body{
   overflow:hidden;
   box-shadow:0 15px 40px rgba(0,0,0,0.18);
   z-index:999;
+  opacity:0;
+visibility:hidden;
+transition:0.25s ease;
 }
 
 .dropdown-content a{
@@ -120,7 +125,10 @@ body{
 }
 
 .dropdown:hover .dropdown-content{
+  .dropdown-content:hover{
   display:block;
+    opacity:1;
+  visibility:visible;
 }
 
 /* HERO */
