@@ -75,6 +75,11 @@ body{
 
 .dropdown-content{
   display:none;
+  flex-direction:column;
+  .dropdown-content a{
+  width:100%;
+  white-space:nowrap;
+}
   position:absolute;
   top:35px;
   left:0;
@@ -283,30 +288,33 @@ footer{
 
   <div class="nav-links" id="navLinks">
 
-    <a href="#">EA Program</a>
+  <div class="dropdown">
 
-    <a href="#">EA Career Opportunities</a>
+    <a href="#">Menu ▾</a>
 
-    <a href="#">EA Students LMS Login</a>
+    <div class="dropdown-content">
 
-    <a href="#">US Taxation Career Guidance</a>
+      <a href="#">EA Program</a>
 
-    <div class="dropdown">
+      <a href="#">EA Career Opportunities</a>
 
-      <a href="#">Partnership ▾</a>
+      <a href="#">EA Students LMS Login</a>
 
-      <div class="dropdown-content">
-        <a href="#">College</a>
-        <a href="#">Corporate</a>
-      </div>
+      <a href="#">US Taxation Career Guidance</a>
+
+      <a href="#">Partnership - College</a>
+
+      <a href="#">Partnership - Corporate</a>
+
+      <a href="#">About Us</a>
+
+      <a href="#">Contact Us</a>
 
     </div>
 
-    <a href="#">About Us</a>
-
-    <a href="#">Contact Us</a>
-
   </div>
+
+</div>
 
 </nav>
 
