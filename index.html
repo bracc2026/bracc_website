@@ -28,7 +28,7 @@ body{
   top:0;
   left:0;
   width:100%;
-  padding:15px 25px;
+  padding:12px 28px;
   background:rgba(15,23,42,0.92);
   backdrop-filter:blur(8px);
   display:flex;
@@ -38,6 +38,25 @@ body{
 }
 
 .logo img{
+.nav-left{
+  display:flex;
+  align-items:center;
+}
+
+.menu-btn{
+  color:white !important;
+  text-decoration:none;
+  font-size:18px !important;
+  font-weight:600;
+  padding:10px 16px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.menu-btn:hover{
+  background:rgba(255,255,255,0.08);
+}
+  
   height:100px;
   width:auto;
   display:block;
@@ -76,24 +95,27 @@ body{
 .dropdown-content{
   display:none;
   position:absolute;
-  top:40px;
-  right:0;
+  top:55px;
+  left:0;
   background:white;
-  min-width:260px;
-  border-radius:14px;
+  min-width:280px;
+  border-radius:18px;
   overflow:hidden;
-  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  box-shadow:0 15px 40px rgba(0,0,0,0.18);
   z-index:999;
 }
 
 .dropdown-content a{
   display:block;
-  padding:14px 18px;
+  padding:16px 20px;
   color:#0f172a;
+  text-decoration:none;
+  font-size:15px;
+  border-bottom:1px solid #f1f5f9;
 }
 
 .dropdown-content a:hover{
-  background:#f1f5f9;
+  background:#f8fafc;
   color:#2563eb;
 }
 
@@ -274,43 +296,39 @@ footer{
 
 <nav class="navbar">
 
- <div class="logo">
-  <img src="logo.png" alt="BRACC Logo">
-</div>
+  <div class="nav-left">
 
-  <div class="menu-toggle" onclick="toggleMenu()">
-    ☰
-  </div>
+    <div class="dropdown">
 
-  <div class="nav-links" id="navLinks">
+      <a href="#" class="menu-btn">☰ Menu</a>
 
-  <div class="dropdown">
+      <div class="dropdown-content">
 
-    <a href="#">Menu ▾</a>
+        <a href="#">EA Program</a>
 
-    <div class="dropdown-content">
+        <a href="#">EA Career Opportunities</a>
 
-      <a href="#">EA Program</a>
+        <a href="#">EA Students LMS Login</a>
 
-      <a href="#">EA Career Opportunities</a>
+        <a href="#">US Taxation Career Guidance</a>
 
-      <a href="#">EA Students LMS Login</a>
+        <a href="#">Partnership - College</a>
 
-      <a href="#">US Taxation Career Guidance</a>
+        <a href="#">Partnership - Corporate</a>
 
-      <a href="#">Partnership - College</a>
+        <a href="#">About Us</a>
 
-      <a href="#">Partnership - Corporate</a>
+        <a href="#">Contact Us</a>
 
-      <a href="#">About Us</a>
-
-      <a href="#">Contact Us</a>
+      </div>
 
     </div>
 
   </div>
 
-</div>
+  <div class="logo">
+    <img src="logo.png" alt="BRACC Logo">
+  </div>
 
 </nav>
 
