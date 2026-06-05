@@ -1,6 +1,234 @@
-<section class="section">
+<!DOCTYPE html>
+<html lang="en">
 
-  <h2>EA Program</h2>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>EA Program | BRACC</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#f5f7fb;
+  color:#1e293b;
+  line-height:1.8;
+}
+
+/* NAVBAR */
+
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:15px 20px;
+  background:rgba(15,23,42,0.92);
+  backdrop-filter:blur(8px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:999;
+}
+
+.logo img{
+  height:95px;
+  width:auto;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:600;
+  background:rgba(255,255,255,0.08);
+  padding:12px 18px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.back-btn:hover{
+  background:rgba(255,255,255,0.15);
+  color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+  background:
+  linear-gradient(rgba(15,23,42,0.82),rgba(30,58,138,0.82)),
+  url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400');
+
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+  text-align:center;
+
+  padding:220px 20px 120px;
+}
+
+.hero h1{
+  font-size:70px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:28px;
+  max-width:900px;
+  margin:auto;
+}
+
+/* SECTION */
+
+.section{
+  max-width:1150px;
+  margin:auto;
+  padding:90px 20px;
+}
+
+.section h2{
+  text-align:center;
+  font-size:48px;
+  margin-bottom:50px;
+  color:#0f172a;
+}
+
+.about{
+  font-size:20px;
+  line-height:2;
+}
+
+/* SUB HEADINGS */
+
+.subheading{
+  font-size:32px;
+  color:#1e3a8a;
+  margin-top:70px;
+  margin-bottom:25px;
+  font-weight:700;
+}
+
+/* CARDS */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:30px;
+}
+
+.card{
+  background:white;
+  padding:35px;
+  border-radius:24px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.card h3{
+  margin-bottom:18px;
+  color:#1e3a8a;
+  font-size:24px;
+}
+
+.highlight{
+  background:white;
+  padding:30px;
+  border-radius:22px;
+  margin-top:25px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.06);
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:35px;
+  color:#64748b;
+  font-size:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .logo img{
+    height:70px;
+  }
+
+  .hero{
+    padding:180px 20px 100px;
+  }
+
+  .hero h1{
+    font-size:48px;
+  }
+
+  .hero p{
+    font-size:22px;
+  }
+
+  .section h2{
+    font-size:36px;
+  }
+
+  .subheading{
+    font-size:28px;
+  }
+
+  .about{
+    font-size:18px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+  <a href="index.html" class="back-btn">
+    ← Back
+  </a>
+
+  <div class="logo">
+    <img src="logo.png" alt="BRACC Logo">
+  </div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <h1>EA Program</h1>
+
+  <p>
+    Understanding the Enrolled Agent qualification, career opportunities, exam structure, and global potential.
+  </p>
+
+</section>
+
+<!-- CONTENT -->
+
+<section class="section">
 
   <div class="about">
 
@@ -14,17 +242,13 @@
 
     Over the last decade, EA has become one of the fastest-growing international career opportunities for commerce, accounting, taxation, and finance professionals in India due to the rapid growth of US outsourcing and global accounting firms.
 
-    <br><br>
+    <!-- EXAM STRUCTURE -->
 
-    <h3 style="color:#1e3a8a; margin-top:40px;">
+    <div class="subheading">
       EA Exam Structure
-    </h3>
-
-    <br>
+    </div>
 
     The EA exam is officially called the Special Enrollment Examination (SEE) and consists of 3 parts:
-
-    <br><br>
 
     <div class="cards">
 
@@ -60,181 +284,101 @@
 
     </div>
 
-    <br><br>
+    <!-- PASSING EA -->
 
-    <h3 style="color:#1e3a8a; margin-top:40px;">
+    <div class="subheading">
       What It Takes to Pass EA
-    </h3>
+    </div>
 
-    <br>
+    <div class="highlight">
 
-    Passing EA requires consistency, conceptual understanding, and practice with MCQs and taxation scenarios.
+      ✅ 6 to 12 months to complete all 3 parts
 
-    <br><br>
+      <br><br>
 
-    Most working professionals in India generally take:
+      ✅ 2 to 4 months preparation per part
 
-    <br><br>
+      <br><br>
 
-    ✅ 6 to 12 months to complete all 3 parts
+      ✅ Regular revision and mock test practice
 
-    <br>
-    ✅ 2 to 4 months preparation per part
+      <br><br>
 
-    <br>
-    ✅ Regular revision and mock test practice
+      The exam is manageable even for beginners if studied with proper guidance and structured preparation.
 
-    <br><br>
+    </div>
 
-    The exam is manageable even for beginners if studied with proper guidance and structured preparation.
+    <!-- COST -->
 
-    <br><br>
-
-    <h3 style="color:#1e3a8a; margin-top:40px;">
+    <div class="subheading">
       EA Exam Fees & Cost
-    </h3>
+    </div>
 
-    <br>
+    <div class="highlight">
 
-    Approximate costs involved:
+      ✅ IRS Exam Fee:
+      Around USD 260+ per part
 
-    <br><br>
+      <br><br>
 
-    ✅ IRS Exam Fee:
-    Around USD 260+ per part
+      ✅ Training / Coaching:
+      Depends on institute and support structure
 
-    <br><br>
+      <br><br>
 
-    ✅ Training / Coaching:
-    Depends on institute and support structure
+      ✅ Testing Center Fee:
+      Included during scheduling
 
-    <br><br>
+    </div>
 
-    ✅ Testing Center Fee:
-    Included during scheduling
+    <!-- PASSING SCORE -->
 
-    <br><br>
-
-    Overall investment varies based on coaching provider and learning approach.
-
-    <br><br>
-
-    <h3 style="color:#1e3a8a; margin-top:40px;">
+    <div class="subheading">
       Passing Score
-    </h3>
+    </div>
 
-    <br>
+    <div class="highlight">
 
-    The EA exam is scored on a scaled score system.
+      ✅ Passing Score:
+      105 out of 130
 
-    <br><br>
+      <br><br>
 
-    ✅ Passing Score:
-    105 out of 130
+      Results are generally available immediately after the exam for most candidates.
 
-    <br><br>
+    </div>
 
-    Results are generally available immediately after the exam for most candidates.
+    <!-- LOCATIONS -->
 
-    <br><br>
-
-    <h3 style="color:#1e3a8a; margin-top:40px;">
+    <div class="subheading">
       Where Can You Take the Exam?
-    </h3>
+    </div>
 
-    <br>
+    <div class="highlight">
 
-    EA exams are conducted through Prometric Testing Centers.
+      📍 Bengaluru  
+      <br>
+      📍 Chennai  
+      <br>
+      📍 Hyderabad  
+      <br>
+      📍 Kochi  
+      <br>
+      📍 Mumbai  
+      <br>
+      📍 Delhi  
+      <br>
+      📍 Ahmedabad
 
-    <br><br>
+    </div>
 
-    In India, exams are currently available in major cities such as:
+    <!-- HISTORY -->
 
-    <br><br>
-
-    📍 Bengaluru  
-    📍 Chennai  
-    📍 Hyderabad  
-    📍 Kochi  
-    📍 Mumbai  
-    📍 Delhi  
-    📍 Ahmedabad  
-
-    <br><br>
-
-    Availability may vary depending on testing windows and Prometric schedules.
-
-    <br><br>
-
-    <h3 style="color:#1e3a8a; margin-top:40px;">
-      Eligibility & Registration
-    </h3>
-
-    <br>
-
-    There is no minimum degree requirement to appear for EA.
-
-    <br><br>
-
-    To register for the exam, candidates generally need:
-
-    <br><br>
-
-    ✅ Valid Passport
-
-    <br>
-    ✅ Government-issued identification
-
-    <br>
-    ✅ IRS PTIN (Preparer Tax Identification Number)
-
-    <br><br>
-
-    The PTIN can be applied online through the IRS website.
-
-    <br><br>
-
-    <h3 style="color:#1e3a8a; margin-top:40px;">
-      Career Opportunities After EA
-    </h3>
-
-    <br>
-
-    After completing EA, professionals may explore opportunities in:
-
-    <br><br>
-
-    ✅ US Taxation Firms
-
-    <br>
-    ✅ Big 4 & Outsourcing Firms
-
-    <br>
-    ✅ Global Capability Centers (GCCs)
-
-    <br>
-    ✅ Tax Preparation & Advisory
-
-    <br>
-    ✅ Remote US Tax Support Roles
-
-    <br><br>
-
-    EA professionals in India are increasingly hired for specialized US tax compliance and consulting support roles.
-
-    <br><br>
-
-    <h3 style="color:#1e3a8a; margin-top:40px;">
+    <div class="subheading">
       Brief History of EA
-    </h3>
-
-    <br>
+    </div>
 
     The Enrolled Agent designation dates back to 1884 in the United States.
-
-    <br><br>
-
-    It was created after the Civil War when professionals were authorized to represent citizens before the US Treasury regarding financial claims and taxation matters.
 
     <br><br>
 
@@ -243,3 +387,10 @@
   </div>
 
 </section>
+
+<footer>
+  © 2026 BRACC | Building Careers in US Taxation & Accounting
+</footer>
+
+</body>
+</html>
