@@ -96,8 +96,7 @@ body{
   color:#2563eb;
 }
 
-.dropdown:hover .dropdown-content,
-.dropdown-content:hover{
+.dropdown.active .dropdown-content{
   opacity:1;
   visibility:visible;
   transform:translateY(0);
@@ -277,8 +276,8 @@ footer{
 
   <div class="dropdown">
 
-    <a href="#" class="menu-btn">
-      ☰ Menu
+<a href="#" class="menu-btn" id="menuButton">
+  ☰ Menu
     </a>
 
     <div class="dropdown-content">
@@ -422,6 +421,36 @@ footer{
 <footer>
   © 2026 BRACC | Building Careers in US Taxation & Accounting
 </footer>
+<script>
 
+const dropdown = document.querySelector(".dropdown");
+
+const menuButton = document.getElementById("menuButton");
+
+/* TOGGLE MENU */
+
+menuButton.addEventListener("click", function(e){
+
+  e.preventDefault();
+
+  e.stopPropagation();
+
+  dropdown.classList.toggle("active");
+
+});
+
+/* CLOSE WHEN CLICKING OUTSIDE */
+
+document.addEventListener("click", function(e){
+
+  if(!dropdown.contains(e.target)){
+
+    dropdown.classList.remove("active");
+
+  }
+
+});
+
+</script>
 </body>
 </html>
